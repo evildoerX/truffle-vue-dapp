@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld/>
   </div>
 </template>
 
@@ -12,6 +12,10 @@ export default {
   name: 'app',
   components: {
     HelloWorld
+  },
+  beforeCreate () {
+    // console.log('registerWeb3 Action dispatched from casino-dapp.vue')
+    this.$store.dispatch('registerWeb3')
   }
 }
 </script>
