@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "ganache/start": "ganache-cli -p 8545 -m 'candy maple cake sugar pudding cream honey rich smooth crumble sweet treat' > /dev/null &",
+    "ganache/start": "ganache-cli",
     "ganache/stop": "sudo kill `sudo lsof -t -i:8545`",
     "lint": "vue-cli-service lint"
   },
