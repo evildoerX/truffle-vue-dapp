@@ -2,16 +2,22 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld/>
+    <todolist />
+    <users />
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import todolist from './components/TodoList'
+import users from './components/Users'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld,
+    todolist,
+    users
   },
   beforeCreate () {
     // console.log('registerWeb3 Action dispatched from casino-dapp.vue')

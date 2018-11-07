@@ -2,7 +2,10 @@ import Vue from 'vue'
 import App from './App.vue'
 import store from './store'
 import Web3 from 'web3'
+import iView from 'iview'
+import 'iview/dist/styles/iview.css'
 
+Vue.use(iView)
 Vue.config.productionTip = false
 
 let web3
